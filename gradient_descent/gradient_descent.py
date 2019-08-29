@@ -6,6 +6,7 @@ import numpy as np
 x = sp.Symbol('x')
 y = (x+5)**2
 yprime = y.diff(x)
+print("First Derivative: " + str(yprime))
 
 # Convert the first derivative of the input function to a lambda
 yprime = lambdify(x, yprime)
@@ -25,6 +26,6 @@ while prev_step_size > precision and n < max_n:
     prev_step_size = abs(cur_x - prev_x)
     n += 1
 
-    print("Iteration:",n,"\nX:",cur_x)
+    # print("Iteration:",n,"\nX:",cur_x)
     
 print("The local minimum occurs at", cur_x)
