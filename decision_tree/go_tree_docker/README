@@ -1,0 +1,4 @@
+# A Decision Tree algorithm implemented in Go run inside a Docker container.
+## To run
+### docker build -t go_tree_docker .
+###  docker run -it --rm --name my-running-app go_tree_docker
